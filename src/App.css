@@ -1,0 +1,11 @@
+.flex-container {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.flex-item {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}

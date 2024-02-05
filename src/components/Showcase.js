@@ -59,7 +59,6 @@ const Showcase = () => {
             </ParaText>
 
             {/* {social icons} */}
-
             <FlexContainer gap="20px" responsiveFlex>
               {/* mail */}
               <IconContainer color="white" size="1.5rem">
@@ -75,6 +74,7 @@ const Showcase = () => {
               </IconContainer>
             </FlexContainer>
           </motion.div>
+          {/* right */}
         </FlexContainer>
       </PaddingContainer>
     </>

@@ -34,3 +34,7 @@ code {
   background-image: linear-gradient(#7eadfc, #131c13);
   border-radius: 10px;
 }
+
+.flex-container {
+  display: flex;
+}

@@ -62,7 +62,7 @@ const Project = ({ data }) => {
           {data.projects_detail}
         </ParaText>
         <a href={data.link}>
-          <Button>View website</Button>
+          <Button padding="1rem 2rem">View website</Button>
         </a>
       </motion.div>
 

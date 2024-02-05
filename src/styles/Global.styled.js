@@ -42,8 +42,6 @@ export const FlexContainer = styled.div`
 export const Heading = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.white};
   text-align: ${({ align }) => align};
-  // word-spacing: ${({ wordSpacing }) => wordSpacing};
-  // white-space:${({ whiteSpace }) => whiteSpace}
 
   font-size: ${({ size }) => {
     switch (size) {
@@ -85,8 +83,6 @@ export const BlueText = styled.span`
 export const ParaText = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.para_text_color};
   line-height: 2rem;
-  margin-top: ${({ top }) => top};
-  margin-bottom: ${({ bottom }) => bottom};
 `;
 
 export const IconContainer = styled.div`
@@ -106,9 +102,12 @@ export const IconContainer = styled.div`
 
 export const Button = styled.div`
   display: inline-block;
-  width: max-content;
-  padding: 1rem 2rem;
+  width: auto;
+  padding: ${({ padding }) => padding};
+  top: ${({ top }) => top};
+  bottom: ${({ bottom }) => bottom};
   color: ${({ theme }) => theme.colors.white};
+  font-color: none;
   background-color: ${({ theme }) => theme.colors.primary_light};
   border: 1px solid ${({ theme }) => theme.colors.gray};
   border-radius: 5px;
@@ -118,6 +117,7 @@ export const Button = styled.div`
   &:hover {
     color: ${({ theme }) => theme.colors.primary_light};
     background-color: ${({ theme }) => theme.colors.white};
+    font-color: ${({ theme }) => theme.colors.black};
   }
 `;
 
